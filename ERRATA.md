@@ -4,6 +4,6 @@ Thank you for reading! We strive for accuracy, but if you find any errors or typ
 
 ## Confirmed Errata & Updates
 
-| Date | Location | Original Text | Corrected Text | Status in KDP |
-| :--- | :--- | :--- | :--- | :--- |
-| 2026-10-27 | Sample | Sample | Sample | Sample |
+| Date | Update/Error | Location | Original Text | Corrected Text | Status in KDP |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-27 | Sample | Sample | Sample | Sample | Sample |
