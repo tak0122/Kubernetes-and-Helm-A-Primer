@@ -1,5 +1,6 @@
 Kubernetes and Helm: A Primer - Supporting Code and Configuration Files
 Copyright 2026 [Takayuki Kushida]
 
-This product includes software developed at
-The Apache Software Foundation (https://www.apache.org/).
+This repository contains modified configuration files (code) derived from Bitnami Helm Charts,
+originally developed by Bitnami / Broadcom, Inc. (https://github.com/bitnami/charts),
+licensed under the Apache License, Version 2.0.
