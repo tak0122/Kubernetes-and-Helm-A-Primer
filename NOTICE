@@ -1,4 +1,4 @@
-Kubernetes and Helm: A Primer - Supporting Code and Configuration Files
+The Book titled "Kubernetes and Helm: A Primer" - Supporting Code and Configuration Files
 Copyright 2026 [Takayuki Kushida]
 
 This repository contains modified configuration files (code) derived from Bitnami Helm Charts,
