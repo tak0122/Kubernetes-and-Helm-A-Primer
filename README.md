@@ -10,6 +10,7 @@ This repository contains the configuration files and deployment manifests accomp
 ├── ERRATA.md     # List of known corrections, updates, and clarifications for the book
 ├── LICENSE       # Licensing terms for the contents of this repository
 └── NOTICE        # Third-party copyright notices and attributions
+```
 
 ## Found an Error?
 If you notice a typo or a broken command, please submit an issue on this repository or check **[ERRATA.md](ERRATA.md)** for the latest updates.
