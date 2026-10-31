@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-two-applications
+  annotations:
+    ingress.kubernetes.io/ssl-redirect: "false"
+    ingress.kubernetes.io/rewrite-target: "/"
+spec:
+  rules:
+  - http:
+     paths:
+     - path: /application-1
+       pathType: Prefix
+       backend:
+         service:
+           name: application-service-1
+           port:
+             number: 4000
+     - path: /application-2
+       pathType: Prefix
+       backend:
+         service:
+           name: application-service-2
+           port:
+             number: 4000

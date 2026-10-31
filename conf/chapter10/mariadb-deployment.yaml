@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mariadb-deployment
+  labels:
+    app: mariadb-wordpress
+    tier: database
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mariadb-wordpress
+      tier: database
+  template:
+    metadata:
+      labels:
+        app: mariadb-wordpress
+        tier: database
+    spec:
+      containers:
+      - name: mariadb
+        image: mariadb:12.3
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MARIADB_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mariadb-passwords   # kubectl get secret
+              key: mariadb-root-password
+        - name: MARIADB_DATABASE
+          value: "wordpress_database"
+        - name: MARIADB_USER
+          value: "wordpress_user"
+        - name: MARIADB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mariadb-passwords   # kubectl get secret
+              key: mariadb-user-password
+        volumeMounts:
+        - name: vol
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: vol
+        persistentVolumeClaim:
+          claimName: mariadb-pvc

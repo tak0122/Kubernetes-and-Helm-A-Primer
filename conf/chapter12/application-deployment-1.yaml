@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: application-deployment-1
+  labels:
+    app: hostname-docker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hostname-docker
+  template:
+    metadata:
+      labels:
+        app: hostname-docker
+    spec:
+      containers:
+      - name: host-application
+        image: adongy/hostname-docker
+        ports:
+        - containerPort: 3000

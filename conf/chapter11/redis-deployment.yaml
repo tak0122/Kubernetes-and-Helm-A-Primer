@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      initContainers:
+      - name: init-acl
+        image: busybox:1.38
+        env:
+        - name: REDIS_USER
+          valueFrom:
+            secretKeyRef:
+              name: redis-secret
+              key: REDIS_USER
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: redis-secret
+              key: REDIS_PASSWORD
+        command:
+        - sh
+        - -c
+        - |
+          echo -e "user default off\nuser $REDIS_USER on >$REDIS_PASSWORD ~* +@all" > /etc/redis-work/users.acl
+        volumeMounts:
+        - name: acl-volume
+          mountPath: /etc/redis-work
+      containers:
+      - name: redis
+        image: redis:8
+        command:
+        - redis-server
+        - /etc/redis/redis.conf
+        ports:
+        - containerPort: 6379
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/redis/redis.conf
+          subPath: redis.conf
+        - name: acl-volume
+          mountPath: /etc/redis/users.acl
+          subPath: users.acl
+        - name: redis-data
+          mountPath: /data
+      volumes:
+      - name: config-volume
+        configMap:
+          name: redis-configmap
+      - name: acl-volume
+        emptyDir: {}
+      - name: redis-data
+        persistentVolumeClaim:
+          claimName: redis-pvc

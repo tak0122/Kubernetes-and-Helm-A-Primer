@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: application-service-2
+spec:
+  type: ClusterIP
+  selector:
+    app: nginx-demo
+  ports:
+    - name: "http-port"
+      protocol: "TCP"
+      port: 4000
+      targetPort: 80

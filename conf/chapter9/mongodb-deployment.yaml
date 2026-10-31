@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb-rocket-chat
+  template:
+    metadata:
+      labels:
+        app: mongodb-rocket-chat
+    spec:
+      containers:
+      - name: mongodb
+        image: mongo:4.4
+        args: ["--replSet","rs0","--oplogSize","128"]
+        volumeMounts:
+        - name: vol
+          mountPath: /data/db
+
+      volumes:
+      - name: vol
+        persistentVolumeClaim:
+          claimName: mongodb-pvc

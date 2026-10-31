@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rocket-chat-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rocket-chat
+  template:
+    metadata:
+      labels:
+        app: rocket-chat
+    spec:
+      containers:
+      - name: rocket-chat
+        image: rocket.chat:4
+        ports:
+        - containerPort: 3000
+        env:
+        - name: ROOT_URL
+          value: http://s.s.s.s:30001/
+        - name: MONGO_URL
+          value: mongodb://mongodb-service:27017/rocket
+        - name: MONGO_OPLOG_URL
+          value: mongodb://mongodb-service:27017/local
+
+        - name: ADMIN_USERNAME
+          value: "chatadmin"
+        - name: ADMIN_PASS
+          value: "6b4h52ngxp"  # This value should be updated with a compex string.
+        - name: ADMIN_NAME
+          value: "Admin User"
+        - name: OVERWRITE_SETTING_Show_Setup_Wizard
+          value: "completed"
