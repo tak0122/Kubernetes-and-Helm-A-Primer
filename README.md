@@ -9,7 +9,8 @@ This repository contains the configuration files and deployment manifests accomp
 ├── conf/         # Kubernetes YAML manifests and Helm values.yaml organized by chapter
 ├── ERRATA.md     # List of known corrections, updates, and clarifications for the book
 ├── LICENSE       # Licensing terms for the contents of this repository
-└── NOTICE        # Third-party copyright notices and attributions
+├── NOTICE        # Third-party copyright notices and attributions
+└── README.md     # This file
 ```
 
 ## Found an Error?
