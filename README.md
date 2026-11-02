@@ -16,6 +16,9 @@ This repository contains the configuration files and deployment manifests accomp
 ## Found an Error?
 If you notice a typo or a broken command, please submit an issue on this repository or check **[ERRATA.md](ERRATA.md)** for the latest updates.
 
+​Purchasers of this eBook can update to the latest version anytime under "**Manage Your Content and Devices**" on Amazon.
+
+
 ## License
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
