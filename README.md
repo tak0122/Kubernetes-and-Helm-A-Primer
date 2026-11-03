@@ -1,6 +1,12 @@
 # Book "Kubernetes-and-Helm-A-Primer" - Repository
 Official YAML manifests and files for the book titled "Kubernetes and Helm: A Primer"
 
+## 📖 Companion Book
+This repository contains the companion code, manifests, and hands-on exercises for the book **"Kubernetes and Helm: A Primer"**.
+[![Amazon Kindle](https://img.shields.io/badge/Amazon_Kindle-Available_Now-FF9900?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B0HQ5QPP5L)
+
+👉 **[Get your copy on Amazon.com](https://www.amazon.com/dp/B0HQ5QPP5L)**
+
 ## Repository Structure
 This repository contains the configuration files and deployment manifests accompanying the book ***Kubernetes and Helm: A Primer***. Below is an overview of the directory structure and root files:
 
