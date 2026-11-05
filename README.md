@@ -1,4 +1,4 @@
-# Book "Kubernetes-and-Helm-A-Primer" - Repository
+# Amazon KDP Book Titled "Kubernetes-and-Helm-A-Primer" - Repository
 Official YAML manifests and files for the book titled "Kubernetes and Helm: A Primer"
 
 ## 📖 Companion Book
