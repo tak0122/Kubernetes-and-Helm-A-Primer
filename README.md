@@ -1,8 +1,9 @@
-# Book "Kubernetes-and-Helm-A-Primer" - Repository
+# Amazon KDP Book Titled "Kubernetes-and-Helm-A-Primer" - Repository
 Official YAML manifests and files for the book titled "Kubernetes and Helm: A Primer"
 
-## 📖 Companion Book
-**"Kubernetes and Helm: A Primer"**
+## Book information
+📖 **Want to master the deployment and hands-on architecture behind these manifests?**  
+Check out the complete over 500-page book for this repository: **[Kubernetes and Helm: A Primer on Amazon ($6.99 Launch Price)](https://www.amazon.com/dp/B0HQ5QPP5L)**
 
 [![Amazon Kindle](https://img.shields.io/badge/Amazon_Kindle-Available_Now-FF9900?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B0HQ5QPP5L)
 
