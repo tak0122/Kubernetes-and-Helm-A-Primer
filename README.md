@@ -9,14 +9,17 @@ Official YAML manifests and files for the book titled "[Kubernetes and Helm: A P
 
 ## 1. Book information
 📖 **Want to master the deployment and hands-on architecture behind these manifests?**  
-Check out the complete over 500-page book for this repository: **[Kubernetes and Helm: A Primer on Amazon ($6.99 Launch Price)](https://www.amazon.com/dp/B0HQ5QPP5L)**
+Check out the complete the 563-page book for this repository: **[Kubernetes and Helm: A Primer](https://www.amazon.com/dp/B0HQ5QPP5L)**  on Amazon.
 
-[![Amazon Kindle](https://img.shields.io/badge/Amazon_Kindle-Available_Now-FF9900?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B0HQ5QPP5L)
-
-👉 **[Get your copy on Amazon.com](https://www.amazon.com/dp/B0HQ5QPP5L)**
+<p align="center">
+  Book "Kubernetes and Helm: A Primer"<br>
+  <a href="https://www.amazon.com/dp/B0HQ5QPP5L">
+    <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/81KfWG2hexL._SL1500_.jpg" alt="Kubernetes and Helm: A Primer" width="300">
+  </a>
+</p>
 
 ## 2. Repository Structure
-This repository contains the configuration files and deployment manifests accompanying the book ***Kubernetes and Helm: A Primer***. Below is an overview of the directory structure and root files:
+This repository contains the configuration files and deployment manifests accompanying the book **[Kubernetes and Helm: A Primer] on Amazon**. Below is an overview of the directory structure and root files:
 
 ```text
 .
