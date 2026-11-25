@@ -1,8 +1,8 @@
-## Thanksgiving & Cyber Monday Special (Nov. 25–29, 2026)
+# Thanksgiving & Cyber Monday Special (Nov. 25–29, 2026)
 
-For a limited time through **November 29, 2026**, the complete 563-page Kindle edition of ***Kubernetes and Helm: A Primer*** is available for **FREE ($0.00)** on Amazon!
+For a limited time through **November 29, 2026**, the complete 563-page Kindle edition of ***[Kubernetes and Helm: A Primer](https://www.amazon.com/dp/B0HQ5QPP5L)*** is available for **FREE ($0.00)** on Amazon!
 
-- **Book:** *Kubernetes and Helm: A Primer* (563 pages, step-by-step hands-on guide)
+- **Book:** **Kubernetes and Helm: A Primer** (563 pages, step-by-step hands-on guide)
 - **Offer:** **FREE ($0.00)** on Amazon Kindle (Nov. 25 – Nov. 29)
 - **Link:** **[Get Your Free Copy on Amazon.com](https://www.amazon.com/dp/B0HQ5QPP5L)**
 
