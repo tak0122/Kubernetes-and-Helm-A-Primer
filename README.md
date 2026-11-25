@@ -1,4 +1,15 @@
-# Book "Kubernetes-and-Helm-A-Primer" - Repository
+## Thanksgiving & Cyber Monday Special (Nov. 25–29, 2026)
+
+For a limited time through **November 29, 2026**, the complete 563-page Kindle edition of ***Kubernetes and Helm: A Primer*** is available for **FREE ($0.00)** on Amazon!
+
+- **Book:** *Kubernetes and Helm: A Primer* (563 pages, step-by-step hands-on guide)
+- **Offer:** **FREE ($0.00)** on Amazon Kindle (Nov. 25 – Nov. 29)
+- **Link:** **[Get Your Free Copy on Amazon.com](https://www.amazon.com/dp/B0HQ5QPP5L)**
+
+Also free on your local Amazon Kindle store.
+
+# Amazon Kindle Book "Kubernetes-and-Helm-A-Primer" - Repository
+
 Official YAML manifests and files for the book titled "[Kubernetes and Helm: A Primer](https://www.amazon.com/dp/B0HQ5QPP5L)"
 
 <p align="center">
